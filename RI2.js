@@ -26,7 +26,7 @@ function  TelefoneCelular(ddd, numero) {
 }
 
 
-function Endereco(rua, numero,cidade,estado){
+function Endereco(estado,cidade,rua,numero){
     this.rua = rua
     this.numero = numero
     this.cidade = cidade
@@ -42,20 +42,21 @@ function Endereco(rua, numero,cidade,estado){
 
 
 const telefoneCelular1 = new TelefoneCelular("31", "12981088049");
-const endereco1 = new Endereco("MG", "Minas Gerais", "av.ouro preto", "027");
+const endereco1 = new Endereco("MG", "Minas Gerais", "Av.ouro preto", "027");
 const cliente1 = new Cliente("Noah Conrado Heinz", telefoneCelular1 , "noah.heinz@gmail.com", endereco1);
 
 const telefoneCelular2 = new TelefoneCelular("92", "12981077080");
-const endereco2 = new Endereco("AM", "Manaus", "av.Eduardo Ribeiro", "098");
+const endereco2 = new Endereco("AM", "Manaus", "Av.Eduardo Ribeiro", "098");
 const cliente2 = new Cliente("Maria Eduarda Assis", telefoneCelular1 , "maria.assis@gmail.com", endereco1);
 
 const telefoneCelular3 = new TelefoneCelular("12", "11981099030");
-const endereco3 = new Endereco("SP", "São Paulo", "av.Paulista", "123");
+const endereco3 = new Endereco("SP", "São Paulo", "Av.Paulista", "123");
 const cliente3 = new Cliente("Ana Beatriz Costa", telefoneCelular1 , "beatriz.costa@gmail.com", endereco1);
 
 
 
-console.log("---------------")
+
+
 console.log("Informações do cliente: \n" + cliente1.descricaoCliente)
 console.log("---------------")
 console.log("---------------")
